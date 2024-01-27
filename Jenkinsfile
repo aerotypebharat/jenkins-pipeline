@@ -4,6 +4,7 @@ pipeline {
     stage("git pull"){
       steps {
         echo "This is git pull stage"
+        sh "git pull https://github.com/aerotypebharat/jenkins-pipeline.git"
       }
     }
     stage("build"){
