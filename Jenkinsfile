@@ -23,7 +23,7 @@ pipeline {
         }
       }
       steps {
-        ehco "Running e2e tests in headless environment."
+        echo "Running e2e tests in headless environment."
       }
     }
     stage("artifacts"){
