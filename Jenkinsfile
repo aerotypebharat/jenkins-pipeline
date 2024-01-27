@@ -2,22 +2,22 @@ pipeline {
   agent any
   stages {
     stage("git pull"){
-      step {
+      steps {
         echo "This is git pull stage"
       }
     }
     stage("build"){
-      step {
+      steps {
         echo "This is build stage"
       }
     }
     stage("test"){
-      step{ 
+      steps { 
         echo "This is test stage"
       }
     }
     stage("artifacts"){
-      step{
+      steps {
         echo "This stage is upload artifacts to JFrog"
       }
     }
