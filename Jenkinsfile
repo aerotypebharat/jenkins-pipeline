@@ -16,7 +16,7 @@ pipeline {
         echo "This is test stage"
       }
     }
-    stage(run e2e) {
+    stage("run e2e") {
       when {
         expression {
           BRANCH_NAME = "DEV"
