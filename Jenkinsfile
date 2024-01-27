@@ -23,6 +23,8 @@ pipeline {
     }
   }
   post {
-    echo "Any post pipeline steps go here"
+    always {
+      echo "Post build steps go here!"
+    }
   }
 }
